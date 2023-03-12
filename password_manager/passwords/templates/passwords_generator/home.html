@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Password Manager</h1>
+  <p>Welcome to the Password Manager app. Use the links below to generate new passwords or recover existing ones.</p>
+  <ul>
+    <li><a href="{% url 'generate' %}">Generate Passwords</a></li>
+    <li><a href="{% url 'recover' %}">Recover Passwords</a></li>
+  </ul>
+{% endblock %}
